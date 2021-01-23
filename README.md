@@ -32,7 +32,7 @@ print(data)
 Used for reading ruby marshal files.
 Methods:
 
-### __init__(stream: io.BytesIO)
+### \_\_init\_\_(stream: io.BytesIO)
 Creates a new Reader object.
 Arguments:
 | Name | Description |
@@ -46,19 +46,19 @@ Reads next object in the file. This method usually needs to be called only once.
 A string read from a ruby marshal file.
 NOTE: This object doesn't support most str methods!
 Methods:
-### __str__() -> str
+### \_\_str\_\_() -> str
 Convert this object into a string.
 
 ## class rubymarshal.RubyObject
 A class that represents a ruby object. You can access its attributes like any other python object.
 Methods:
-### __dir__() -> List[str]
+### \_\_dir\_\_() -> List[str]
 Returns all attributes of the object.
 
 ## class rubymarshal.Symbol
 A Ruby symbol.
 Methods:
-### __str__() -> str
+### \_\_str\_\_() -> str
 Returns the symbol as a string, without the : character at the beginning.
 
 ## class rubymarshal.DecodeError(RuntimeError)
@@ -112,8 +112,8 @@ Attributes:
 | d | Depth |
 
 Methods:
-### __getitem__(xyz) -> int
+### \_\_getitem\_\_(xyz) -> int
 Gets an integer at \[\*xyz\].
 
-### __setitem__(xyz, v) -> int
+### \_\_setitem\_\_(xyz, v) -> int
 Sets an integer at \[\*xyz\].
