@@ -1,5 +1,3 @@
-# https://www.youtube.com/watch?v=8aCUHkFA9oQ THE WORLD REVOLTING
-
 DEFAULT_ENCODING = "utf8"
 
 import types
@@ -63,7 +61,7 @@ class RubyString():
         return self.s.decode(self.encoding)
 
     def __repr__(self):
-        return repr(self.s.decode(self.encoding))
+        return "RubyString(" + repr(self.s.decode(self.encoding)) + ")"
 
 class Symbol():
 
