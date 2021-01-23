@@ -62,17 +62,22 @@ Methods:
 Returns the symbol as a string, without the : character at the beginning.
 
 ## class rubymarshal.DecodeError(RuntimeError)
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.SymbolDecodeError(rubymarshal.DecodeError)
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.ArrayDecodeError(rubymarshal.DecodeError)
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.SymlinkDecodeError(rubymarshal.DecodeError)
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.ObjlinkDecodeError(rubymarshal.DecodeError)
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.rmxptypes.RMXPDecodeError(RuntimeError)
-Exceptions that are thrown when the reader encounters a decoding error.
+Exception that is thrown when the reader encounters a decoding error.
 
 ## class rubymarshal.rmxptypes.Tone
 An RGSS Tone object.
